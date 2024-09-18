@@ -6,6 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class UserData implements DataSource {
     private String nomeCompleto;
     private int eta;
@@ -13,7 +14,5 @@ public class UserData implements DataSource {
     public void getData(DataSource ds) {
         nomeCompleto = ds.getNomeCompleto();
         eta = ds.getEta();
-        System.out.println(nomeCompleto);
-        System.out.println(eta);
     }
 }

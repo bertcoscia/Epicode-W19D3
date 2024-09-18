@@ -7,7 +7,7 @@ import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 
 @AllArgsConstructor
-public class InfoAdapter extends UserData implements DataSource{
+public class InfoAdapter implements DataSource{
     private Info info;
 
     @Override

@@ -7,7 +7,17 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class Pagina {
+public class Pagina implements Component{
     private int numero;
     private String testo;
+
+    @Override
+    public void stampa() {
+        System.out.println(this.toString());
+    }
+
+    @Override
+    public int getNumeroPagine() {
+        return 1;
+    }
 }

@@ -2,7 +2,6 @@ package bertcoscia.Epicode_W19D3.ex1Adapter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Main {
 
